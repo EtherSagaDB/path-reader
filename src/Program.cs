@@ -34,7 +34,7 @@ namespace PathReader
 
 			Directory.CreateDirectory("./out");
 			String docPath = "./out/";
-			string doc = "paths.csv";
+			string doc = $"{PathData.Timestamp}-paths.csv";
 
 			using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, doc), true))
 			{
